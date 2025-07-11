@@ -1,0 +1,16 @@
+
+.env
+
+# Base de données SQLite
+alerts.db
+
+# Environnement virtuel Python
+venv/
+.venv/
+
+# Fichiers compilés Python
+__pycache__/
+*.pyc
+*.pkl
+# Logs et autres fichiers générés
+*.cong
