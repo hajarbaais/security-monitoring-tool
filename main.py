@@ -41,7 +41,7 @@ class SecurityMonitor:
                     
                 except Exception as e:
                     self.logger.error(f"Erreur critique: {e}")
-                    time.sleep(300)  # Attente avant réessai
+                    time.sleep(300)  
 
     def _process_alerts(self, alerts, source):
         """Traite une liste d'alertes"""

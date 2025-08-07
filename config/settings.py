@@ -7,7 +7,7 @@ class Settings:
 
       NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/1.0"
       DB_PATH = os.getenv("DB_PATH", "alerts.db")
-      KEYWORDS = os.getenv("KEYWORDS", "Apache,Nginx,Linux").split(",")
+      KEYWORDS = os.getenv("KEYWORDS", "Nginx,Ubuntu,Cloudflare,cdnjs,jsDelivr,Animate.css,Bootstrap,Facebook Pixel,Google Analytics,Google Tag Manager,Font Awesome,Popper,Swiper,core-js,SweetAlert2,jQuery,").split(",")
     # Notification Settings
       NOTIFICATION_SETTINGS = {
         # Email

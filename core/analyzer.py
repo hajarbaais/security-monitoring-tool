@@ -1,6 +1,6 @@
 import spacy
 from spacy.language import Language
-from spacy.matcher import PhraseMatcher, Matcher
+from spacy.matcher import PhraseMatcher, Matcher    
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
