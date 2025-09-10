@@ -1,7 +1,5 @@
 # Cybersecurity Monitoring and Alert System
 
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-
 An automated cybersecurity monitoring system that collects, analyzes, and notifies about threats in real time, helping organizations stay proactive in protecting their infrastructure.
 
 ---
@@ -12,10 +10,7 @@ An automated cybersecurity monitoring system that collects, analyzes, and notifi
 - [Features](#features)  
 - [Configuration](#configuration)  
 - [Installation and Usage](#installation-and-usage)  
-- [Roadmap](#roadmap)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Acknowledgements](#acknowledgements)
+
 
 ---
 
@@ -64,3 +59,48 @@ EMAIL_USER="your_email@example.com"
 EMAIL_PASS="your_password"
 SLACK_TOKEN="your_slack_token"
 TELEGRAM_TOKEN="your_telegram_token"
+
+## Installation et Utilisation
+
+### Option 1: Intégration directe
+
+1. **Installez Python** sur votre serveur
+2. **Copiez tous les fichiers** dans un dossier `/security-monitor`
+3. **Installez les dépendances** :
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Configurez le fichier .env** avec vos paramètres
+5. **Lancez le bot en arrière-plan** :
+   ```bash
+   nohup python main.py &
+   ```
+
+### Option 2: API
+
+1. **Utilisez le fichier `api.py`** que je vous ai fourni
+2. **Installez FastAPI** :
+   ```bash
+   pip install fastapi uvicorn
+   ```
+3. **Lancez le serveur API** :
+   ```bash
+   uvicorn api:app --reload
+   ```
+4. **Connectez votre site** avec des requêtes AJAX :
+   ```javascript
+   fetch('http://localhost:8000/alerts')
+       .then(response => response.json())
+       .then(data => displayAlerts(data));
+   ```
+
+## Structure du Projet
+
+```
+security-monitor/
+├── main.py # Script principal
+├── api.py # API FastAPI (optionnel)
+├── requirements.txt # Liste des dépendances
+├── .env # Configuration (à créer)
+├── database.db # Base de données SQLite (généré automatiquement)
+└── README.md # Ce fichier
