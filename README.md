@@ -65,9 +65,9 @@ TELEGRAM_TOKEN="your_telegram_token"
 
 ### Option 1: Direct Integration
 
-1. **Install Python on your server
-2. **Copy all files into a /security-monitor folder
-3. **Install dependencies:** :
+1. **Install Python on your server:**
+2. **Copy all files into a /security-monitor folder**
+3. **Install dependencies** :
    ```bash
    pip install -r requirements.txt
    ```
