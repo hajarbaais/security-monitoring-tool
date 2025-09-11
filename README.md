@@ -59,6 +59,7 @@ EMAIL_USER="your_email@example.com"
 EMAIL_PASS="your_password"
 SLACK_TOKEN="your_slack_token"
 TELEGRAM_TOKEN="your_telegram_token"
+```
 
 ## Installation and Usage
 
