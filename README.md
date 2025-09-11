@@ -60,41 +60,41 @@ EMAIL_PASS="your_password"
 SLACK_TOKEN="your_slack_token"
 TELEGRAM_TOKEN="your_telegram_token"
 
-## Installation et Utilisation
+## Installation and Usage
 
-### Option 1: Intégration directe
+### Option 1: Direct Integration
 
-1. **Installez Python** sur votre serveur
-2. **Copiez tous les fichiers** dans un dossier `/security-monitor`
-3. **Installez les dépendances** :
+1. **Install Python on your server
+2. **Copy all files into a /security-monitor folder
+3. **Install dependencies:** :
    ```bash
    pip install -r requirements.txt
    ```
-4. **Configurez le fichier .env** avec vos paramètres
-5. **Lancez le bot en arrière-plan** :
+4. **Configure the .env** file with your settings
+5. **Run the bot in the background:** :
    ```bash
    nohup python main.py &
    ```
 
 ### Option 2: API
 
-1. **Utilisez le fichier `api.py`** que je vous ai fourni
-2. **Installez FastAPI** :
+1. **Use the provided `api.py`** file
+2. **Install FastAPI:** :
    ```bash
    pip install fastapi uvicorn
    ```
-3. **Lancez le serveur API** :
+3. **Start the API server** :
    ```bash
    uvicorn api:app --reload
    ```
-4. **Connectez votre site** avec des requêtes AJAX :
+4. **Connect your website**  using AJAX requests:
    ```javascript
    fetch('http://localhost:8000/alerts')
        .then(response => response.json())
        .then(data => displayAlerts(data));
    ```
 
-## Structure du Projet
+## Project Structure
 
 ```
 security-monitor/
