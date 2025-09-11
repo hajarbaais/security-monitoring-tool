@@ -99,9 +99,10 @@ TELEGRAM_TOKEN="your_telegram_token"
 
 ```
 security-monitor/
-├── main.py # Script principal
-├── api.py # API FastAPI (optionnel)
-├── requirements.txt # Liste des dépendances
-├── .env # Configuration (à créer)
-├── database.db # Base de données SQLite (généré automatiquement)
-└── README.md # Ce fichier
+├── main.py            # Main script
+├── api.py             # FastAPI endpoint (optional)
+├── requirements.txt   # Dependencies list
+├── .env               # Configuration file (to be created)
+├── database.db        # SQLite database (auto-generated)
+└── README.md          # Documentation file
+```
